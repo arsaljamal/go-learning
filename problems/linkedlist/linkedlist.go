@@ -32,6 +32,10 @@ func removeNthFromEnd(index int, node *Node) *Node {
 	second.Next = second.Next.Next
 
 	return head.Next
+	//Think of it like two runners 🏃‍♂️🏃‍♀️. 
+	// You send one runner ahead by n steps. 
+	// Then move both together until the fast one hits the end.
+	// Now the slow one is exactly before the node to delete.
 }
 
 
